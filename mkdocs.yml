@@ -1,0 +1,63 @@
+site_name: G検定 学習ノート
+site_description: JDLA G検定 試験対策ノート
+site_author: makino
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切替
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切替
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - ホーム: index.md
+  - AI概論:
+    - AIとは: ai/overview.md
+    - AI歴史: ai/history.md
+  - 機械学習:
+    - 機械学習の基礎: ml/basics.md
+    - 代表的な手法: ml/methods.md
+  - ディープラーニング:
+    - ニューラルネットワーク: dl/neural_network.md
+    - CNN・RNN: dl/cnn_rnn.md
+    - 最新モデル: dl/modern_models.md
+  - 数学・統計:
+    - 線形代数: math/linear_algebra.md
+    - 確率・統計: math/statistics.md
+  - 法律・倫理:
+    - AI倫理: ethics/ai_ethics.md
+    - 法規制: ethics/regulations.md

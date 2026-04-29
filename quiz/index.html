@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3f51b5">
+  <meta name="description" content="JDLA G検定 対策クイズアプリ">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="G検定">
+  <title>G検定 クイズ</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- スタート画面 -->
+    <div id="start-screen" class="screen active">
+      <div class="card">
+        <div class="app-icon">🎓</div>
+        <h1>G検定 クイズ</h1>
+        <p class="subtitle">JDLA G検定 対策</p>
+        <div class="form-group">
+          <label for="cat-sel">カテゴリ</label>
+          <select id="cat-sel">
+            <option value="all">すべて</option>
+          </select>
+        </div>
+        <p class="q-count" id="q-count"></p>
+        <button id="start-btn" class="btn btn-primary">クイズを始める</button>
+        <a href="../" class="btn btn-secondary">ノートを読む</a>
+      </div>
+    </div>
+
+    <!-- クイズ画面 -->
+    <div id="quiz-screen" class="screen">
+      <div class="progress-bar"><div id="prog-fill"></div></div>
+      <div class="card">
+        <div class="meta-row">
+          <span id="cat-badge" class="badge"></span>
+          <span id="q-num" class="q-num"></span>
+        </div>
+        <p id="q-text" class="q-text"></p>
+        <div id="opts"></div>
+      </div>
+    </div>
+
+    <!-- 結果画面 -->
+    <div id="result-screen" class="screen">
+      <div class="card">
+        <div id="score-area"></div>
+        <p id="result-msg" class="result-msg"></p>
+        <button id="retry-btn" class="btn btn-primary">もう一度</button>
+        <a href="../" class="btn btn-secondary">ノートに戻る</a>
+      </div>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[project]
+name = "g-kentei"
+version = "0.1.0"
+description = "G検定 学習ノート and quiz app"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",
+    "mkdocs>=1.6.0",
+    "mkdocs-material>=9.5.0",
+    "pymdown-extensions>=10.0",
+    "streamlit>=1.35.0",
+]
+
+[tool.uv]
+package = false

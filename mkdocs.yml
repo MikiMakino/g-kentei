@@ -45,9 +45,12 @@ markdown_extensions:
 
 nav:
   - ホーム: index.md
+  - 直前チートシート: sheets/index.md
   - AI概論:
     - AIとは: ai/overview.md
     - AI歴史: ai/history.md
+    - 人工知能分野の問題: ai/classical_problems.md
+    - AIの社会実装: ai/social_implementation.md
   - 機械学習:
     - 機械学習の基礎: ml/basics.md
     - 代表的な手法: ml/methods.md

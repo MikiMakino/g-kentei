@@ -35,4 +35,7 @@ JDLA（日本ディープラーニング協会）主催の **G検定（ジェネ
 2. クイズアプリで理解度を確認する
 3. 間違えた問題の解説を読み返す
 
-## [🧩 クイズに挑戦する](https://g-kentei-quiz.streamlit.app/)
+## クイズ
+
+- [ブラウザ版クイズに挑戦する](quiz/)
+- [Streamlit版クイズを開く](https://g-kentei-quiz.streamlit.app/)
